@@ -28,7 +28,7 @@ def extract_job(html):
             company = str(company.string)
         company = company.strip()
     else:
-        company = ""
+        company = None
 
     location = html.find("div", {"class": "recJobLoc"})["data-rc-loc"]
     job_id = html["data-jk"]
